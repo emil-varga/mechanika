@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="133.86931mm"
+   height="51.358387mm"
+   viewBox="0 0 505.96276 194.11044"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="vektory_RL.svg"
+   inkscape:export-filename="vektory_RL.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="302.6417"
+     inkscape:cy="75.306872"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-7-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-5-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-7-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-5-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-7-1-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-5-2-1" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-112.18864,-42.596934)">
+    <g
+       id="g5">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none;marker-end:url(#ConcaveTriangle)"
+         d="M 506.08986,155.59891 V 54.502422"
+         id="path1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none;marker-end:url(#ConcaveTriangle-7)"
+         d="M 505.14941,154.6526 H 606.2459"
+         id="path1-6" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none;marker-end:url(#ConcaveTriangle-7-1)"
+         d="m 506.77644,153.68161 -71.48601,71.486"
+         id="path1-6-9" />
+      <text
+         xml:space="preserve"
+         style="font-size:16px;font-family:'Latin Modern Mono Light';-inkscape-font-specification:'Latin Modern Mono Light, ';writing-mode:lr-tb;direction:ltr;fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none"
+         x="439.32266"
+         y="194.50462"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           x="439.32266"
+           y="194.50462"
+           style="font-style:italic;font-weight:bold;font-size:16px;fill:#000000;stroke:none">X</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16px;font-family:'Latin Modern Mono Light';-inkscape-font-specification:'Latin Modern Mono Light, ';writing-mode:lr-tb;direction:ltr;fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none"
+         x="505.28601"
+         y="169.29999"
+         id="text1-9"><tspan
+           sodipodi:role="line"
+           id="tspan1-2"
+           x="505.28601"
+           y="169.29999"
+           style="font-style:italic;font-size:16px;fill:#000000;stroke:none">O</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16px;font-family:'Latin Modern Mono Light';-inkscape-font-specification:'Latin Modern Mono Light, ';writing-mode:lr-tb;direction:ltr;fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none"
+         x="572.58447"
+         y="143.86064"
+         id="text1-2"><tspan
+           sodipodi:role="line"
+           id="tspan1-6"
+           x="572.58447"
+           y="143.86064"
+           style="font-style:italic;font-weight:bold;font-size:16px;fill:#000000;stroke:none">Y</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16px;font-family:'Latin Modern Mono Light';-inkscape-font-specification:'Latin Modern Mono Light, ';writing-mode:lr-tb;direction:ltr;fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none"
+         x="518.87915"
+         y="94.902275"
+         id="text1-2-2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="fill:#000000;stroke:none"
+           x="518.87915"
+           y="94.902275"><tspan
+   style="font-style:italic;font-weight:bold"
+   id="tspan3">Z</tspan> = <tspan
+   style="font-style:italic;font-weight:bold"
+   id="tspan4">X</tspan>×<tspan
+   style="font-style:italic;font-weight:bold"
+   id="tspan5">Y</tspan></tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none;marker-end:url(#ConcaveTriangle-6)"
+       d="M 224.25017,158.72023 V 57.62374"
+       id="path1-9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none;marker-end:url(#ConcaveTriangle-7-9)"
+       d="M 225.19062,157.77392 H 124.09413"
+       id="path1-6-0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none;marker-end:url(#ConcaveTriangle-7-1-8)"
+       d="m 223.56359,156.80293 71.48601,71.486"
+       id="path1-6-9-8" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-family:'Latin Modern Mono Light';-inkscape-font-specification:'Latin Modern Mono Light, ';writing-mode:lr-tb;direction:ltr;fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none"
+       x="246.9688"
+       y="211.06097"
+       id="text1-8"><tspan
+         sodipodi:role="line"
+         id="tspan1-5"
+         x="246.9688"
+         y="211.06097"
+         style="font-style:italic;font-weight:bold;font-size:16px;fill:#000000;stroke:none">X</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-family:'Latin Modern Mono Light';-inkscape-font-specification:'Latin Modern Mono Light, ';writing-mode:lr-tb;direction:ltr;fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none"
+       x="212.52299"
+       y="173.83553"
+       id="text1-9-0"><tspan
+         sodipodi:role="line"
+         id="tspan1-2-9"
+         x="212.52299"
+         y="173.83553"
+         style="font-style:italic;font-size:16px;fill:#000000;stroke:none">O</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-family:'Latin Modern Mono Light';-inkscape-font-specification:'Latin Modern Mono Light, ';writing-mode:lr-tb;direction:ltr;fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none"
+       x="161.0275"
+       y="181.6302"
+       id="text1-2-6"><tspan
+         sodipodi:role="line"
+         id="tspan1-6-3"
+         x="161.0275"
+         y="181.6302"
+         style="font-style:italic;font-weight:bold;font-size:16px;fill:#000000;stroke:none">Y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-family:'Latin Modern Mono Light';-inkscape-font-specification:'Latin Modern Mono Light, ';writing-mode:lr-tb;direction:ltr;fill:none;stroke:#000000;stroke-width:1.88976;stroke-dasharray:none"
+       x="252.27907"
+       y="107.9231"
+       id="text1-2-2-8"><tspan
+         sodipodi:role="line"
+         id="tspan2-5"
+         style="fill:#000000;stroke:none"
+         x="252.27907"
+         y="107.9231"><tspan
+   style="font-style:italic;font-weight:bold"
+   id="tspan3-6">Z</tspan> = -<tspan
+   style="font-style:italic;font-weight:bold"
+   id="tspan4-1">X</tspan>×<tspan
+   style="font-style:italic;font-weight:bold"
+   id="tspan5-1">Y</tspan></tspan></text>
+  </g>
+</svg>

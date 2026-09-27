@@ -1,0 +1,88 @@
+\chapter{Kinematika a Newtonova dynamika}
+
+Pro urceni pohyboveho stavu hmotniho bodu potrebujeme znat, v nejakem case, polohu a rychlost a vyslednici sil, ktera na hmotny bod pusobi. Pak muzeme spocist vsechen budouci vyvoj polohy hmotneho bodu.
+
+\section{Kinematika hmotného bodu}
+Poloha částice v trojrozměrném prostoru s kartezkymi souradenicmi v čase $t$ je popsaná polohovým vektorem $\vect{r}(t) \in \mathbb{R}^3$. V ortonormální kartézské bázi $\{\vect{e}_x, \vect{e}_y, \vect{e}_z\}$ máme vyjádření:
+\begin{equation}
+    \vect{r}(t) = x(t)\vect{e}_x + y(t)\vect{e}_y + z(t)\vect{e}_z,
+\end{equation}
+nebo ekvivalentni vyjadreni v inych souradnicovych systemech, cylindricke ($\rho(t)$, $\phi(t)$ a $z(t)$) nebo sfericke ($r(t)$, $\theta(t)$, $\phi(t)$).
+
+\emph{Prumerna} velkost rychlost mezi body 1 a 2, mezi ktorymi urazi hmotni bod drahu $\Delta s$ za cas $\Delta t$ je
+$$ \bar{v} = \frac{\Delta s}{\Delta t}. $$
+
+Okamžitá rychlost $\vect{v}(t)$ a zrychlení $\vect{a}(t)$ jsou definovány pomocí časových derivací polohového vektoru:
+\begin{equation}
+    \vect{v}(t) = \odv{\vect{r}}{t} = \dot{\vect{r}}(t), \qquad
+    \vect{a}(t) = \odv{\vect{v}}{t} = \dodv{\vect{r}}{t} = \ddot{\vect{r}}(t),
+\end{equation}
+t.j., pro male casove zmeny $\delta t$, poloha bodu v case $\vect{r}(t + \delta t) \approx \vect{r}(t) + \vect{v}(t)\delta t$ a podobne pro rychlost $\vect{v}(t)$. V limite $\Delta t, \Delta s \to 0$ mame $|\vect{v}| = \bar{v}$.
+
+Pohyb nazyvame \emph{primocary}, kdyz se deje v primce a \emph{krivocary} pro vsetky ostatni pripady. Podlve velikosti rychlosti mame pohyb \emph{rovnomerny} pro $|\vect{v}|=$~konst. a \emph{nerovnomerny} pro $|\vect{v}|\neq$~konst.
+
+Primocary pohyb s konstantnim zrychlenim $a$
+$$ x = \frac{1}{2}a t^2 + v_0 t + x_0, $$
+kde $v_0$, $x_0$ jsou pocatecni podminky.
+
+\begin{priklad}[Rovnomerny pohyb po kruznici]
+    Nech sa hmotny pod pohybuje po kruznici s polomerem $R$ a periodou (jeden obeh) $T$. Najprirozenejsi zapis je pomoci polarnich souradnic,
+    \begin{align*}
+        r(t) &= R\\
+        \phi(t) &= \frac{2\pi}{T}t = \omega t,
+    \end{align*}
+    kde sme definovali uhlovou frekvenci $\omega = 2\pi/T$.
+
+    Ekvivalentne muzeme pohyb zapsat v kartezkych souradnicich
+    $$ x = R \cos(\omega t),\;\; y = R \sin(\omega t) $$.
+
+    Pro rychlost dostavame
+    $$ \vect{v} = \odv{\vect{r}}{t} = R\omega (-\sin(\omega t), \cos(\omega t)), $$
+    kde hned vidime, ze rychlost $|\vect{v}| = R\omega$ se nemeni v case a je kolma na $\vect{r}$
+
+    Pro  zrychleni dostavame
+    $$ \vect{a} = \odv{\vect{v}}{t} = -R\omega^2 (\cos(\omega t), \sin(\omega t)) = - \omega^2 \vect{r}, $$
+    kde vidime, ze zrychleni je \emph{dostredive}, t.j., miry do stredu rotace a je kolme na rychlost.
+
+    Jak by vypadala rychlost a zrychleni pro pohyb po elipse? Je velikost rychlosti stale konstantni, pri konstantni uhlove rychlosti?
+\end{priklad}
+
+Pro pohyb po spirale
+
+% \begin{definice}[Hybnost a síla]
+% Pro hmotný bod o konstantní hmotnosti $m$ pohybující se rychlostí $\vect{v}$ definujeme \textbf{hybnost}:
+% \begin{equation}
+%     \vect{p} \coloneqq m \vect{v}.
+% \end{equation}
+% Působí-li na bod celková síla $\vect{F}$, je časová změna hybnosti rovna této síle.
+% \end{definice}
+
+% \section{Newtonovy pohybové zákony}
+% Základem newtonovské formulace jsou tři pohybové postuláty.
+
+% \begin{veta}[Druhý Newtonův pohybový zákon]
+% Časová změna hybnosti hmotného bodu je přímo úměrná výsledné působící síle $\vect{F}$ a má její směr:
+% \begin{equation}
+%     \odv{\vect{p}}{t} = \vect{F}(\vect{r}, \dot{\vect{r}}, t).
+% \end{equation}
+% V případě konstantní hmotnosti $m = \text{konst.}$ přechází rovnice do známého tvaru:
+% \begin{equation}
+%     m \ddot{\vect{r}} = \vect{F}.
+% \end{equation}
+% \end{veta}
+
+% \begin{priklad}[Jednorozměrný lineární harmonický oscilátor]
+% Uvažujme hmotný bod o hmotnosti $m$ na pružině s tuhostí $k > 0$ bez tlumení. Pohybová rovnice má tvar:
+% \begin{equation}
+%     m \ddot{x} + k x = 0 \iff \ddot{x} + \omega_0^2 x = 0, \quad \text{kde } \omega_0 = \sqrt{\frac{k}{m}}.
+% \end{equation}
+% Obecné řešení této lineární diferenciální rovnice druhého řádu je:
+% \begin{equation}
+%     x(t) = A \cos(\omega_0 t + \varphi_0),
+% \end{equation}
+% kde amplituda $A \ge 0$ a fázový posuv $\varphi_0 \in [0, 2\pi)$ plynou z počátečních podmínek $x(0)$ a $\dot{x}(0)$.
+% \end{priklad}
+
+% \begin{poznamka}
+% Při transformaci do neinerciální vztažné soustavy (např. rotující úhlovou rychlostí $\vect{\omega}$) vystupují na pravé straně pohybové rovnice setrvačné síly: odstředivá síla $-m\vect{\omega}\crossprod(\vect{\omega}\crossprod\vect{r})$, Coriolisova síla $-2m(\vect{\omega}\crossprod\vect{v})$ a Eulerova síla $-m(\dot{\vect{\omega}}\crossprod\vect{r})$.
+% \end{poznamka}

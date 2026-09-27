@@ -1,0 +1,82 @@
+\chapter{Popis polohy a směru v prostoru}
+
+\section{Vektory}
+
+Polohy a smery urcujeme v prostoru pomoci vektoru. Vektory znacime $\vect{v}$ (pripadne $\vec{v}$), ich velikost ako $|\vect{v}|$ a smer (o jednotkove velikosti) $\vect{v}/|\vect{v}|$.
+
+\subsection{Vektorova aritmetika a kartezky system}
+
+Vektory mozeme vyjadrit v tzv. kartezkom systeme suradnic, $\vect{v} = v_x\vect{e}_x + v_y\vect{e}_y + v_z\vect{e_z}$, alebo skratene $\vect{v} = (v_x, v_y, v_z)$, kde $\vect{e_{x,y,z}}$ (tiez niekedy $\vect{i,j,k}$) su \emph{ortonormalne bazove vektory}, jednotkove vektory vzajomne na seba kolme v smere os suradnicoveho systemu.
+
+S vektormi mozme robit zakladne vektorove operace
+\begin{description}
+    \item[velkost vektoru]
+    $$ |\vect{a}| = \sqrt{a_x^2 + a_y^2 + a_z^2} $$
+    \item[soucet a nasobeni skalarem]
+    $$ \vect{a} + \vect{b} = (a_x + b_x, a_y + b_y, a_z + b_z) $$
+    $$ c \vect{a} = (c a_x, c a_y, c a_z) $$
+    \item[skalarni soucin] (Einsteinova notace)
+    $$ \vect{a}\cdot\vect{b} = a_x b_x + a_y b_y + a_z b_z = \sum_{i=1}^{3} a_i b_i = a_i b_i $$
+    Plati
+    $$ \vect{a}\cdot\vect{b} = |\vect{a}||\vect{b}|\cos(\phi) $$
+    \item[vektorovy soucin] 
+    $$ \vect{a} \times \vect{b} = \left| \begin{matrix}
+        \vect{i} & \vect{j} & \vect{k} \\
+        a_x & a_y & a_z \\
+        b_x & b_y & b_z
+    \end{matrix} \right| = (a_yb_z - a_zb_y, a_zb_x - a_xb_z, a_xb_y - a_yb_x) $$
+    
+\end{description}
+
+\includegraphics[width=0.9\textwidth]{chapters/figures/vektory.pdf}
+
+Geometricka interpretace vektorovych soucinu
+
+\includegraphics[width=0.9\textwidth]{chapters/figures/vektory_soucin.pdf}
+
+Vektorovy sucin vytvara tzv. pravotocivu sustavu suradnic (vpravo). Orientace vektoru se da urcit tzv. pravidlem prave ruky: natahneme palec, ukazovak a prostrednik do pravych uhlu. Ak ukazovak ukazuje v smere $\vect{a}$, prostrednik v smeru $\vect{b}$, pak palec miri ve smeru $\vect{a}\times\vect{b}$.
+\includegraphics{chapters/figures/vektory_RL.pdf}
+
+Vo fyzike sa vetsinou pouziva pravotocivy system. Levotocive systemy se casto objevuji napr. v pocitacove grafike.
+
+\subsection{Kronekerov a Levi-Civitov symbol}
+V kombinacii s Einstainovou notaci (soucet pres opakovane indexy) se mnoho vektorovych operaci s komponentami da zapsat hodne kompkatne pomocou Kronekerovho symbolu $\delta_{ij}$ a Levi-Civitovho symbolu $\varepsilon_{ijk}$.
+
+Pro $\delta_{ij}$ plati, $\delta_{ij} = 1$ kdzy $i=j$ a inak $\delta_{ij} = 0$.
+
+Naopak $\varepsilon_{ijk}$, je tzv. \emph{totalne antysymetricky}, t.j., ak sa hociktore z indexov $ijk$ opakuji, $\varepsilon{ijk} = 0$; $\varepsilon_{123} = 1$ a vsetky ostatne su dane znamienkom permutace indexov 1, 2 a 3. T.j., ak $ijk$ vzniklo sudym poctom zamen susednych indexov, $\varepsilon = 1$, ak lichym $\varepsilon = -1$. T.j, $123, 231, 312 \to 1$ a $213, 132, 321 \to -1$.
+
+Skalarni sucin sa da zapisat ako $\vect{a}\cdot\vect{b} = \delta_{ij}a_i b_j$. Komponenta vektoroveho sucinu $\vect{c} = \vect{a}\times\vect{b}$ sa zas da zapisat ako $c_i = \varepsilon_{ijk}a_j b_k$.
+
+Plati velmi uzitocny vztah
+$$ \varepsilon_{ijk}\varepsilon_{ilm} = \delta_{jl}\delta_{km} - \delta_{kl}\delta_{jm} $$
+
+\begin{priklad}
+    Zapiste, pomoci komponent vektoru,
+    $$ \vect{a} \times (\vect{b}\times\vect{c}) $$
+\end{priklad}
+
+\section{Cylindricke a polarni souřadnice}
+
+Pro konkretni numericke vyjadreni vektoru potrebujeme system souradnic. Na zaklade symetrii, alebo jednoduchosti prace si muzme vybrat libovolny system souradnic, najtypickejsie su
+
+\subsection{Cylindricke (polarni) souradnice}
+
+\subsection{Sfericke souradnice}
+
+Zadane polomerem koule a "zemepisnou" sirkou $\phi$ a vyskou $\theta$
+
+\begin{align*}
+    x &= r \sin\theta \cos\phi\\
+    y &= r \sin\theta \sin\phi\\
+    z &= r \cos\theta
+\end{align*}
+
+\includegraphics{chapters/figures/sfericke.pdf}
+
+\section{Transformace souradnic}
+
+posuv
+
+nasobeni vektoru matici - skalovani a rotace
+

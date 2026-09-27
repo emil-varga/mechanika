@@ -1,0 +1,228 @@
+\documentclass[11pt,a4paper,oneside]{report}
+
+% ---------------------------------------------------------------------------
+% Jazyk, kódování a písma
+% ---------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ---------------------------------------------------------------------------
+% Geometrie stránky a záhlaví
+% ---------------------------------------------------------------------------
+\usepackage[
+    a4paper,
+    top=2.5cm,
+    bottom=2.5cm,
+    left=2.5cm,
+    right=2.5cm,
+    headheight=14pt
+]{geometry}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\nouppercase{\leftmark}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ---------------------------------------------------------------------------
+% Matematická sazba a fyzikální symboly
+% ---------------------------------------------------------------------------
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{bm}
+\usepackage{siunitx}
+\sisetup{output-decimal-marker = {,}}
+
+% Pomocná makra pro matematiku a mechaniku
+\providecommand{\coloneqq}{\mathrel{\mathop:}=}
+\newcommand{\vect}[1]{\bm{#1}}                       % Vektor (tučně)
+\newcommand{\dif}{\mathop{}\!\mathrm{d}}             % Diferenciál 'd'
+\newcommand{\odv}[2]{\frac{\dif #1}{\dif #2}}        % Obyčejná derivace
+\newcommand{\dodv}[2]{\frac{\dif^2 #1}{\dif #2^2}}   % Druhá obyčejná derivace
+\newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}% Parciální derivace
+\newcommand{\dpdv}[2]{\frac{\partial^2 #1}{\partial #2^2}} % Druhá parciální derivace
+\newcommand{\dotprod}{\bm{\cdot}}                    % Skalární součin
+\newcommand{\crossprod}{\bm{\times}}                 % Vektorový součin
+\newcommand{\Lagr}{\mathcal{L}}                      % Lagrangeián
+\newcommand{\Ham}{\mathcal{H}}                       % Hamiltonián
+
+% ---------------------------------------------------------------------------
+% Barvy a grafika
+% ---------------------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\definecolor{primary}{RGB}{18, 52, 86}      % Tmavě modrá
+\definecolor{secondary}{RGB}{140, 40, 40}   % Cihlově červená
+\definecolor{boxbg}{RGB}{248, 249, 252}     % Světle šedé pozadí
+\definecolor{boxborder}{RGB}{210, 215, 225} % Rámeček
+\definecolor{notebg}{RGB}{255, 253, 240}    % Pozadí pro poznámku
+\definecolor{noteborder}{RGB}{230, 200, 100}
+
+% ---------------------------------------------------------------------------
+% Rámečky pro věty, definice a příklady (mdframed)
+% ---------------------------------------------------------------------------
+\usepackage[framemethod=tikz]{mdframed}
+
+\newtheoremstyle{mystyle}%
+  {6pt}{6pt}%
+  {\normalfont}%
+  {}%
+  {\bfseries\color{primary}}%
+  {.}%
+  {0.5em}%
+  {\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mystyle}
+\newtheorem{definicethm}{Definice}[chapter]
+\newtheorem{vetathm}{Věta}[chapter]
+\newtheorem{prikladthm}{Příklad}[chapter]
+
+\newenvironment{definice}[1][]{%
+    \begin{mdframed}[
+        roundcorner=4pt,
+        backgroundcolor=boxbg,
+        linecolor=primary,
+        linewidth=1.2pt,
+        innertopmargin=8pt,
+        innerbottommargin=8pt,
+        innerleftmargin=12pt,
+        innerrightmargin=12pt,
+        skipabove=10pt,
+        skipbelow=10pt,
+        nobreak=false
+    ]%
+    \begin{definicethm}[#1]%
+}{%
+    \end{definicethm}%
+    \end{mdframed}%
+}
+
+\newenvironment{veta}[1][]{%
+    \begin{mdframed}[
+        roundcorner=4pt,
+        backgroundcolor=boxbg,
+        linecolor=secondary,
+        linewidth=1.2pt,
+        innertopmargin=8pt,
+        innerbottommargin=8pt,
+        innerleftmargin=12pt,
+        innerrightmargin=12pt,
+        skipabove=10pt,
+        skipbelow=10pt,
+        nobreak=false
+    ]%
+    \begin{vetathm}[#1]%
+}{%
+    \end{vetathm}%
+    \end{mdframed}%
+}
+
+\newenvironment{priklad}[1][]{%
+    \begin{mdframed}[
+        topline=false,
+        rightline=false,
+        bottomline=false,
+        linecolor=gray,
+        linewidth=2.5pt,
+        innerleftmargin=10pt,
+        innerrightmargin=0pt,
+        innertopmargin=4pt,
+        innerbottommargin=4pt,
+        skipabove=8pt,
+        skipbelow=8pt
+    ]%
+    \begin{prikladthm}[#1]%
+}{%
+    \end{prikladthm}%
+    \end{mdframed}%
+}
+
+\newenvironment{poznamka}{%
+    \begin{mdframed}[
+        roundcorner=3pt,
+        backgroundcolor=notebg,
+        linecolor=noteborder,
+        linewidth=0.8pt,
+        innertopmargin=6pt,
+        innerbottommargin=6pt,
+        innerleftmargin=10pt,
+        innerrightmargin=10pt,
+        skipabove=8pt,
+        skipbelow=8pt
+    ]%
+    \small\textbf{\color{noteborder!70!black}Poznámka: }%
+}{%
+    \end{mdframed}%
+}
+
+% ---------------------------------------------------------------------------
+% Odkazy a metadata PDF
+% ---------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    citecolor=secondary,
+    urlcolor=blue!70!black,
+    pdftitle={Klasická mechanika -- Zápisky z přednášek},
+    pdfauthor={Jméno Studenta / Přednášejícího},
+    pdfsubject={Klasická teoretická mechanika}
+}
+
+\begin{document}
+
+% ---------------------------------------------------------------------------
+% Titulní strana
+% ---------------------------------------------------------------------------
+\pagenumbering{Alph}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge\bfseries Mechanika a kontinuum\par}
+    \vspace{0.8cm}
+    {\Large Zápisky z přednášek\par}
+    \vspace{0.3cm}
+    {\large NAFY001\par}
+    \vfill
+    {\textbf{Autor: } Emil Varga\par}
+    \vspace{0.2cm}
+    {\small Univerzita Karlova MFF\par}
+    {\small \texttt{emil.varga@matfyz.cuni.cz}\par}
+    \vspace{1.5cm}
+    {\large Akademický rok 2026/2027\par}
+\end{titlepage}
+
+% ---------------------------------------------------------------------------
+% Předmluva a obsah (římské číslování)
+% ---------------------------------------------------------------------------
+\pagenumbering{roman}
+
+\tableofcontents
+\newpage
+
+% ---------------------------------------------------------------------------
+% Úvod
+% ---------------------------------------------------------------------------
+\input{chapters/00_uvod}
+
+\newpage
+\pagenumbering{arabic}
+
+% ---------------------------------------------------------------------------
+% Hlavní kapitoly
+% ---------------------------------------------------------------------------
+\input{chapters/01_souradnice.tex}
+\input{chapters/02_kinematika_dynamika}
+\input{chapters/03_zakony_zachovani}
+
+% ---------------------------------------------------------------------------
+% Literatura
+% ---------------------------------------------------------------------------
+\input{chapters/literatura}
+
+\end{document}

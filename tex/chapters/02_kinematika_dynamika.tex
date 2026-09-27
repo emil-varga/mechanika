@@ -1,0 +1,51 @@
+\chapter{Kinematika a Newtonova dynamika}
+
+% \section{Kinematika hmotného bodu}
+% Poloha částice v trojrozměrném eukleidovském prostoru v čase $t$ je popsaná polohovým vektorem $\vect{r}(t) \in \mathbb{R}^3$. V ortonormální kartézské bázi $\{\vect{e}_x, \vect{e}_y, \vect{e}_z\}$ máme vyjádření:
+% \begin{equation}
+%     \vect{r}(t) = x(t)\vect{e}_x + y(t)\vect{e}_y + z(t)\vect{e}_z.
+% \end{equation}
+
+% Okamžitá rychlost $\vect{v}(t)$ a zrychlení $\vect{a}(t)$ jsou definovány pomocí časových derivací polohového vektoru:
+% \begin{equation}
+%     \vect{v}(t) \coloneqq \odv{\vect{r}}{t} = \dot{\vect{r}}(t), \qquad
+%     \vect{a}(t) \coloneqq \odv{\vect{v}}{t} = \dodv{\vect{r}}{t} = \ddot{\vect{r}}(t).
+% \end{equation}
+
+% \begin{definice}[Hybnost a síla]
+% Pro hmotný bod o konstantní hmotnosti $m$ pohybující se rychlostí $\vect{v}$ definujeme \textbf{hybnost}:
+% \begin{equation}
+%     \vect{p} \coloneqq m \vect{v}.
+% \end{equation}
+% Působí-li na bod celková síla $\vect{F}$, je časová změna hybnosti rovna této síle.
+% \end{definice}
+
+% \section{Newtonovy pohybové zákony}
+% Základem newtonovské formulace jsou tři pohybové postuláty.
+
+% \begin{veta}[Druhý Newtonův pohybový zákon]
+% Časová změna hybnosti hmotného bodu je přímo úměrná výsledné působící síle $\vect{F}$ a má její směr:
+% \begin{equation}
+%     \odv{\vect{p}}{t} = \vect{F}(\vect{r}, \dot{\vect{r}}, t).
+% \end{equation}
+% V případě konstantní hmotnosti $m = \text{konst.}$ přechází rovnice do známého tvaru:
+% \begin{equation}
+%     m \ddot{\vect{r}} = \vect{F}.
+% \end{equation}
+% \end{veta}
+
+% \begin{priklad}[Jednorozměrný lineární harmonický oscilátor]
+% Uvažujme hmotný bod o hmotnosti $m$ na pružině s tuhostí $k > 0$ bez tlumení. Pohybová rovnice má tvar:
+% \begin{equation}
+%     m \ddot{x} + k x = 0 \iff \ddot{x} + \omega_0^2 x = 0, \quad \text{kde } \omega_0 = \sqrt{\frac{k}{m}}.
+% \end{equation}
+% Obecné řešení této lineární diferenciální rovnice druhého řádu je:
+% \begin{equation}
+%     x(t) = A \cos(\omega_0 t + \varphi_0),
+% \end{equation}
+% kde amplituda $A \ge 0$ a fázový posuv $\varphi_0 \in [0, 2\pi)$ plynou z počátečních podmínek $x(0)$ a $\dot{x}(0)$.
+% \end{priklad}
+
+% \begin{poznamka}
+% Při transformaci do neinerciální vztažné soustavy (např. rotující úhlovou rychlostí $\vect{\omega}$) vystupují na pravé straně pohybové rovnice setrvačné síly: odstředivá síla $-m\vect{\omega}\crossprod(\vect{\omega}\crossprod\vect{r})$, Coriolisova síla $-2m(\vect{\omega}\crossprod\vect{v})$ a Eulerova síla $-m(\dot{\vect{\omega}}\crossprod\vect{r})$.
+% \end{poznamka}

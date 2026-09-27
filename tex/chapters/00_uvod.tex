@@ -1,0 +1,138 @@
+\chapter*{Úvod}
+\addcontentsline{toc}{chapter}{Úvod}
+
+\section{Vedecký obor}
+
+\subsection{Fyzika a chemie}
+
+\subsection{Mechanika}
+
+
+\section{Fyzikální veličiny}
+
+\subsection{Skalary a vektory}
+
+
+
+\subsection{Jednotky a rozmerova analyza}
+
+Fyzikalni veliciny maji jednotky. Standardne pouzivanym systemem jednotek je \emph{SI}, ktrere definuje 7 \emph{zakladnich} jednotek:
+\begin{center}
+    \begin{tabular}{l|l|c|l}
+        Rozmer & Zakladni Jednotka & symbol & definice\\\hline
+        delka & metr & m & z $c$ a casu\\
+        hmotnost & kilogram & kg & z Planckovy constanty a rychlosti svetla\\
+        cas & sekunda & s & z doby kmitu atomovych hodin\\
+        elektricky proud & amper & A & z naboje elektronu a casu\\
+        latkove mnozsvti & mol & mol & z definice Avogadrovy konstanty\\
+        luminozita & kandela & cd & z energie zareni a fyziologie lidskeho zraku\\
+    \end{tabular}
+\end{center}
+ze kterych jsou dalsi \emph{odvozeny}, napr. pro frekvenci $[f] = \unit{Hz} = \unit{s^{-1}}$ nebo energii $[E] = \unit{J} = \unit{kg . m^2 . s^{-2}}$. SI poskyuje taky zakladni \emph{predpony} (nebo \emph{prefixy}), ktere urcuji nasobky zakladnich jednotek. Momentalne definovany jsou:
+\begin{center}
+    \begin{tabular}{llc|llc}
+        Předpona & Značka & Faktor & Předpona & Značka & Faktor \\ \hline
+        quetta & Q & $10^{30}$  & deci  & d & $10^{-1}$ \\
+        ronna  & R & $10^{27}$  & centi & c & $10^{-2}$ \\
+        yotta  & Y & $10^{24}$  & mili  & m & $10^{-3}$ \\
+        zetta  & Z & $10^{21}$  & mikro & $\mu$ & $10^{-6}$ \\
+        exa    & E & $10^{18}$  & nano  & n & $10^{-9}$ \\
+        peta   & P & $10^{15}$  & piko  & p & $10^{-12}$ \\
+        tera   & T & $10^{12}$  & femto & f & $10^{-15}$ \\
+        giga   & G & $10^{9}$   & atto  & a & $10^{-18}$ \\
+        mega   & M & $10^{6}$   & zepto & z & $10^{-21}$ \\
+        kilo   & k & $10^{3}$   & yocto & y & $10^{-24}$ \\
+        hekto  & h & $10^{2}$   & ronto & r & $10^{-27}$ \\
+        deka   & da & $10^{1}$  & quecto & q & $10^{-30}$ \\
+    \end{tabular}
+\end{center}
+\begin{poznamka}
+    Kilogram je jedina zakladni jednotka, ktera ma predponu v zakladnim nazvu.
+\end{poznamka}
+
+Priroda poskytuje 3 fundamentalni rozmerove konstanty, ktere jsou
+\begin{description}
+    \item[Rychlost svetla ve vakuu (definovana)] $$c_0 = \qty{299 792 458}{m/s}$$
+    \item[Planckova konstanta (definovana)] $$ h = \qty{6.62607015d-34}{J .Hz^{-1}} $$ Casto sa pouziva \emph{redukovana} verze $\hbar = h / 2\pi \approx \qty{1d-34}{J . s}$
+    \item[Gravitacni konstanta] $$ G \approx \qty{6.6743d-11}{m^3 . kg^{-1} . s^{-2}}$$
+\end{description}
+
+S definicemi SI jednotek jsou navyse spojeny dodatecne konstanty
+\begin{description}
+    \item[Boltzmanova konstanta (definovana)] Prevod medzi energii a teplotou
+    $$ k_b = \qty{1.380649d-23}{J . K^{-1}} $$
+    \item[Avogadrova konstanta (definovana)] Pocet castic v 1 molu latky
+    $$ N_A = \qty{6,02214076d23}{} $$
+    \item[Naboj elektronu (definovana)] Definuje jednotku elektrickeho naboje coulomb C, na zaklade ktere je definovan amper A, t.j. $\unit{C} = \unit{A . s}$
+    $$ q_e = \qty{1.602176634d-19}{C} $$
+\end{description}
+
+Vela oborov fyziky ma zauzite jednotky vhodne pre dane problemy (skaly delek, rychlosti a energii). Fundamentalne jedntotky tiez dovoluju prechadzat medzi roznymi rozmermi: napr. v casticove fyzice je bezne udavat hmotnosti v jednotkach $\unit{eV}\approx \qty{1.602d-19}{J}$, co je energie kterou ziska elektron po urychleni napetim 1 volt. Prevod mezi energii a hmotnosti nam poskytuje slavni vztach $E = m c^2$, z ceho $\qty{1}{eV}\approx \qty{1.78d-36}{kg}$. Napr. hmotnost elektronu $m_e \approx \qty{511}{keV}$, hmotnost octomilky $m_\mathrm{moucha} \approx \qty{d29}{eV}$.
+
+\begin{priklad}[Definice parseku]
+    TODO
+\end{priklad}
+
+\subsection{Rozmerova analyza}
+
+Fyzikalne zakony su typicky vyjadrene formou matematickych rovnic spajajuce fyzikalne veliciny. Aby mali rovnice fyziklany zmysel, musia mat konzistentne jednotky. Napriklad pre Newtnov zakon $F = ma$
+\begin{description}
+    \item[Leva strana] $$ [F] = \unit{N} = \unit{kg . m . s^{-2}} $$
+    \item[Prava strana] $$ [m][a] = \unit{kg} \times \unit{m . s^{-2}} $$
+\end{description}
+Tato nutna konzistencia nam poskytuje jednodouchy nastroj ako si overit ci sme pri manipulacii s rovnicami nespravili nejaku chybu (ale pozor, jednotkova konzistencia je nutna podmienka spravnosti, nie dostacujuca).
+
+Vo fyzike casto harju dolezitu rolu skupiny velicin, ktore su bezrozmerne. Predovsetkym, okrem trivialnych prikladov, jedine bezrozmerne veliciny mozu byt argumentami matematickych funkcii. To vidiet napr. z definicie cosinu:
+$$ \cos(x) = 1 - \frac{1}{2}x^2 + \frac{1}{24}x^4 ... $$
+aby hodnota $\cos(x)$ bola zmysluplna, musi mat $x^2$ (a $x^4$ atd.) rovnake jedotky ako 1, t.j., $x$ musi byt bezrozmerne.
+
+Rozmerova analyza nam aj pomoze odhadnut vztahy medzi velicinami. Povezme, ze mame velicinu $Y$, ktora zavisi od velicin $X_1$, $X_2$, \dots Pre mechanicke velciny, $$ [X_k] = \unit{kg^{\alpha_k} . m^{\beta_k} . s^{\gamma_k}}, $$
+a podobne pre $[Y]$, $k = 1 \dots n$. Najprv najdeme vsetky \emph{bezrozmerne skupiny} $\Pi_m$,
+$$ \Pi_m = X_1^{b_1}X_2^{b_2}\cdots, $$
+t.j., $[\Pi_m] = 1$
+
+Potom, ak vime zostrojit $[Y]$ z $[X_k]$ tak, ze $[Y] = [X_1]^{a_1}[X_2]^{a_2}\dots$ tak mozme odhadnut
+$$ Y = C X_1^{a_1}X_2^{a_2}\dots X_n^{a_n}, $$
+kde $C$ moze zavisiet iba na bezrozmernych $\Pi_m$. Ak ziadne $\Pi_m$ neexistuje, tak casto $C \approx 1$. Priklady konkretneho pouzitia su v nasledujucich dvoch prikladoch.
+
+\begin{priklad}[Perioda kyvadla]
+    S akou periodou $T$ kmita kyvadlo o hmotnosti $m$, delke $l$ v gravitacnim poli o zrychleni $g$ a pocatecni vychylke $\theta_0$?
+
+    Mame
+    \begin{align*}
+        [T] &= \unit{s},\\
+        [m] &= \unit{kg},\\
+        [l] &= \unit{m},\\
+        [g] &= \unit{m . s^{-2}},\\
+        [\theta_0] &= 1
+    \end{align*}
+    Z $m$, $l$ a $g$ sa bezrozmerna skupina zostrojit neda, takze nasa neznama funkcia $C$ moze zavisiet iba od $\theta_0$.
+
+    Jednotka $s$ ide zostrojit iba jednym sposobom
+    $$ T \sim m^0 g^{-1/2} l^{1/2} = \sqrt{\frac{l}{g}}. $$
+
+    Odpoved z pohybovych rovnic pre \emph{male kmyty} je $ T = 2 \pi \sqrt{l/g} $, pre velke kmyty perioda zavisi od $\theta_0$.
+\end{priklad}
+
+\begin{priklad}[Explozivní energie jaderné bomby]\footnote{S riesenim prisiel G. I. Taylor, prevzate z knihy \emph{Classical Mechanics}, David Tong, Cambridge University Press}
+    V roce 1945 byla v Novém Mexiku provedena první jaderná zkouška Trinity. Z tohto testu bola zverejnená séria fotografii, z ktorych je mozne vycitat velkost razovej vlny v roznych casovych okamzicich po detonaci. Obr. nize ukazuje razovu vlnu s polomerem $R\approx 150$~m v okamziku $t=0.025$~s. Jak velka energie byla pri vybuchu uvolnena?
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{chapters/figures/trinity_fireball.jpg}
+    \end{center}
+
+    Samotna jadrova reakce je kratka, v okamihu zachyceni fotky uz byla vsetka energie uvolnena. Na cem muze tato energie zaviset? Máme 6 moznosti: tlak a hustota (mohli by sme taky volit teplotu) okolniho vzduchu ($p_0$, $\rho_0$) a plynu uvnitr fireballu ($p$, $\rho$) a pravdaze rychlost propagace samotniho frontu, t.j. $R$ a $t$; $[p] = \unit{kg . m^{-1} . s^{-2}}$, $[\rho] = \unit{kg . m^{-3}}$, $[R] = \unit{m}$, $[t] = \unit{s}$
+
+    Z techto muzeme poskladat tri bezrozmerne veliciny
+
+    $$ \Pi_1 = \frac{p_0}{p},\;\; \Pi_2 = \frac{\rho}{\rho_0},\;\;\Pi_3 = \frac{p_0 t^2}{\rho_0 R^2}$$.
+
+    Pretoze $p \gg p_0$ a $\rho \ll \rho_0$, $\Pi_1 \approx \Pi_2 \approx 0$, takze na $p$ a $\rho$ Z obrázku $t^2/R^2 \approx \num{3d-8}~\unit{\second\per\meter}$ a $p_0 / \rho_0 \approx c_v^2$, kde $c_v \approx 340~\unit{m/s}$ je rychlost zvuku pri standardnich podminkach.
+
+    Rozmer energie je $[E] = \unit{kg . m^2 / s^2}$. Jediny spusob, jak sestrojit vyraz so spravnymi jednotkami zo znamych velicin je
+    $$ E = C \frac{\rho_0 R^5}{t^2}, $$
+    kde bezrozmerne $C$ muze zaviset od $\Pi_k$, ale kedze vsetky $\Pi_k \ll 1$, muzeme ji povazovat za konstantu. Rozmerova analyza nam nepomuze s urcenim $C$. Typicky to ale byva mocnina $2\pi$ a konstanta radu 1. Pro jednoduchost, odhadneme $C=1$. Dosazenim hodnot (pro vzduch $\rho_0 \approx \num{1.3}~\unit{kg/m^3})$,
+    $$ E_\mathrm{nuke} \approx \qty{1.6d+14}{J}. $$
+
+    Tisic ton (1 kilotona, 1~kt) vybusniny TNT uvolni priblizne $E_{1kt} \approx \num{4.2d12}~\unit{J}$. Takze, $ E_\mathrm{nuke} \approx \qty{37}{kt . TNT}$. Skutocna hodnota bola priblizne $\qty{20}{kt. TNT}$.
+\end{priklad}
+

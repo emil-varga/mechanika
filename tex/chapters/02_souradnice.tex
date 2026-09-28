@@ -18,7 +18,8 @@ S vektormi mozme robit zakladne vektorove operace
     \item[skalarni soucin] (Einsteinova notace)
     $$ \vect{a}\cdot\vect{b} = a_x b_x + a_y b_y + a_z b_z = \sum_{i=1}^{3} a_i b_i = a_i b_i $$
     Plati
-    $$ \vect{a}\cdot\vect{b} = |\vect{a}||\vect{b}|\cos(\phi) $$
+    $$ \vect{a}\cdot\vect{b} = |\vect{a}||\vect{b}|\cos(\phi), $$
+    kde $\phi$ je uhel svirany vektory $\vect{a}$ a $\vect{b}$.
     \item[vektorovy soucin] 
     $$ \vect{a} \times \vect{b} = \left| \begin{matrix}
         \vect{i} & \vect{j} & \vect{k} \\
@@ -30,7 +31,13 @@ S vektormi mozme robit zakladne vektorove operace
 
 \includegraphics[width=0.9\textwidth]{chapters/figures/vektory.pdf}
 
-Geometricka interpretace vektorovych soucinu
+Skalarnim soucinem vektoru s bazovymi vektory $\vect{i,j,k}$ dostaneme \emph{smerove kosiny} ($\vect{a}| = a$
+$$ \vect{a}\cdot\vect{i} = a\cos\alpha,\;\; \vect{a}\cdot\vect{j} = a\cos\beta,\;\; \vect{a}\cdot\vect{k} = a\cos\gamma,$$
+pro ktre plati
+$$ \cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1 $$
+
+
+Geometricka interpretace vektorovych soucinu:
 
 \includegraphics[width=0.9\textwidth]{chapters/figures/vektory_soucin.pdf}
 
@@ -58,9 +65,22 @@ $$ \varepsilon_{ijk}\varepsilon_{ilm} = \delta_{jl}\delta_{km} - \delta_{kl}\del
 
 \section{Cylindricke a polarni souřadnice}
 
-Pro konkretni numericke vyjadreni vektoru potrebujeme system souradnic. Na zaklade symetrii, alebo jednoduchosti prace si muzme vybrat libovolny system souradnic, najtypickejsie su
+Pro konkretni numericke vyjadreni vektoru potrebujeme system souradnic. Na zaklade symetrii, alebo jednoduchosti prace si muzme vybrat libovolny system souradnic $q_1, q_2, q_3$ ktore umime provadet jak z kartezkych tak do kartezkych souradnic, t.j.
+$$ q_1 = q_1(x, y, z),\; q_2 = q_2(x, y, z),\; q_3 = q_3(x, y, z) $$
+a
+$$ x = x(q_1, q_2, q_3),\; y = y(q_1, q_2, q_3),\; z = z(q_1, q_2, q_3) $$
+
+Najtypickejsie su cylindricke (polarni v 2D) a sfericke souardnice.
 
 \subsection{Cylindricke (polarni) souradnice}
+Definovane pomoci polomeru $\rho$, uhlu $\phi$ a ve 3D taky vysky $z$, prevody jsou
+$$ x = \rho\cos\phi,\;\; y=\rho\sin\phi,\;\;z=z $$
+a naopak
+$$ \rho = \sqrt{x^2 + y^2},\;\; \phi = \arctan\left(\frac{y}{x}\right),\;\; z=z $$
+
+\begin{center}
+    \includegraphics[width=0.9\textwidth]{chapters/figures/cylindr.png}
+\end{center}
 
 \subsection{Sfericke souradnice}
 
@@ -69,14 +89,62 @@ Zadane polomerem koule a "zemepisnou" sirkou $\phi$ a vyskou $\theta$
 \begin{align*}
     x &= r \sin\theta \cos\phi\\
     y &= r \sin\theta \sin\phi\\
-    z &= r \cos\theta
+    z &= r \cos\theta,
+\end{align*}
+a naopak
+\begin{align*}
+    r &= \sqrt{x^2 + y^2 + z^2} \\
+    \phi &= \arctan\left(\frac{y}{x}\right) \\
+    \theta &= \arccos\left(\frac{z}{r}\right) \\
 \end{align*}
 
-\includegraphics{chapters/figures/sfericke.pdf}
+Uhol voci zvysle ose se typicky definuje na intervale $[0,\pi]$ (ak merime od seveniho polu) nebo $[-\pi/2, \pi/2]$, ak merime od rovniku.
+\begin{center}
+    \includegraphics{chapters/figures/sfericke.pdf}
+\end{center}
 
 \section{Transformace souradnic}
 
-posuv
+Majme objekt zlozeny z viacerych polohovych vektorov $\vect{r}_k$. Tento objekt muzeme popsat v ruzne zvolenych souradnicich ktere vznikly z puvodni nejakou transformaci, co mohla byt jedna nebo kombinace nasledovnich: \emph{posuv soustavy os o $\vect{p}$} -- kazdy $\vect{r}_k \to \vect{r}_k - \vect{p}$; \emph{skalovani} -- $\vect{r}_k \to 1/c \vect{r}_k$ a \emph{rotace}.
 
-nasobeni vektoru matici - skalovani a rotace
+V puvodni soustave necht je $\vect{r} = (x, y, z)$. Tuto soustavu pootocime kolem osy $z$ o uhel $\alpha$ a v teto nove soustave bude $\vect{r}' = (x', y', z')$ pro ktery plati
+\begin{align*}
+    x' &= x \cos\alpha + y\sin\alpha\\
+    y' &= -x \sin\alpha + y\cos\alpha\\
+    z' &= z
+\end{align*}
+\begin{center}
+    \includegraphics[width=0.75\textwidth]{chapters/figures/rotace_soustavy.png}
+\end{center}
 
+Co se da zapsat taky maticove
+$$ 
+    \begin{pmatrix}
+        x' \\ y' \\ z'
+    \end{pmatrix} =  
+    \begin{pmatrix}
+        \cos\alpha & \sin\alpha & 0\\
+        -\sin\alpha & \cos\alpha & 0 \\
+        0 & 0 & 1
+    \end{pmatrix}
+    \begin{pmatrix}
+        x \\ y \\ z
+    \end{pmatrix},
+$$
+t.j.
+$$ r'_i = M_{ij} r_j $$
+
+Skalovani lze taky zapsat maticove, kde $M$ ma jednoduchy tvar
+$$ M = \begin{pmatrix}
+    c & 0 & 0\\
+    0 & c & 0\\
+    0 & 0 & c
+\end{pmatrix} $$
+zrcadleni napr. vuci rovine $xy$
+$$ M=\begin{pmatrix}
+    1 & 0 & 0\\
+    0 & 1 & 0\\
+    0 & 0 & -1
+\end{pmatrix} $$
+
+Obecne, vsechny kombinace rotaci, skalovani a muzme vyjadrit jednoducho pomocou nasobeni matic.
